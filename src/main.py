@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv("catnat_dirty.csv")
+df = pd.read_csv("../data/catnat_dirty.csv")
 
 # ===========================
 # EXERCICE 1
@@ -206,4 +206,4 @@ df_export = df_export.rename(columns={'Has_Deaths': 'Deces'})
 df_export.info()
 
 # 4. Exportez en CSV : catnat_clean.csv
-df_export.to_csv("catnat_clean.csv", index=False)
+df_export.to_csv("../data/catnat_clean.csv", index=False)
