@@ -195,12 +195,12 @@ print("EXERCICE 8")
 print("="*60 + "\n")
 
 # 1. Sélectionnez les colonnes utiles pour l'analyse
-df_export = df[['DisNo.', 'Region', 'Country', 'Has_Deaths', 'Decennie', 'Disaster Type']]
+df_export = df[['DisNo.', 'Region', 'Country', 'Has_Deaths', 'Decennie', 'Disaster Type', 'Total Deaths']]
 
 # 2. Renommez les colonnes si nécessaire (noms clairs, sans espaces)
 df_export = df_export.rename(columns={'Disaster Type': 'Type_Catastrophe'})
 df_export = df_export.rename(columns={'DisNo.': 'ID_Catastrophe'})
-df_export = df_export.rename(columns={'Has_Deaths': 'Deces'})
+df_export = df_export.rename(columns={'Total Deaths': 'Deces'})
 
 # 3. Faites une vérification finale avec info() et head()
 df_export.info()
