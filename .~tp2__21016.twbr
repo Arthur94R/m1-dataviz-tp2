@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='catnat_clean' inline='true' name='federated.1y7r6610679wzl17lb2o60ljdmp6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='catnat_clean' name='textscan.0tkn4vc1eov3j70zyqbn10ps5c7j'>
+            <connection class='textscan' directory='/Users/arthurrondeau/Desktop/PARIS 8 BIG DATA/SEM2/Visualisation data/TP2/data' filename='catnat_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tkn4vc1eov3j70zyqbn10ps5c7j' name='catnat_clean.csv' table='[catnat_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+            <column datatype='string' name='ID_Catastrophe' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Country' ordinal='2' />
+            <column datatype='boolean' name='Deces' ordinal='3' />
+            <column datatype='integer' name='Decennie' ordinal='4' />
+            <column datatype='string' name='Type_Catastrophe' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;fr_FR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_Catastrophe</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID_Catastrophe]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>ID_Catastrophe</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deces</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Deces]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>Deces</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Decennie</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Decennie]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>Decennie</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type_Catastrophe</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type_Catastrophe]</local-name>
+            <parent-name>[catnat_clean.csv]</parent-name>
+            <remote-alias>Type_Catastrophe</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LFR_RFR' />
+            <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='ID Catastrophe' datatype='string' name='[ID_Catastrophe]' role='dimension' type='nominal' />
+      <column caption='Type Catastrophe' datatype='string' name='[Type_Catastrophe]' role='dimension' type='nominal' />
+      <column caption='catnat_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='fr_FR' class='hyper' dbname='/var/folders/y8/gpytstt55lz40g5vk34_91680000gn/T/tableau-temp/#TableauTemp_14t04a409ks0ph0zkx0ee1vrkvrr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/23/2026 03:47:30 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID_Catastrophe</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ID_Catastrophe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID_Catastrophe</remote-alias>
+              <ordinal>0</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16949</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>325</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deces</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Deces]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deces</remote-alias>
+              <ordinal>3</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Decennie</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Decennie]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Decennie</remote-alias>
+              <ordinal>4</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type_Catastrophe</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type_Catastrophe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type_Catastrophe</remote-alias>
+              <ordinal>5</ordinal>
+              <family>catnat_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LFR_RFR' />
+              <object-id>[catnat_clean.csv_086F776F661E422C8BBB04A50FC37957]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;FR&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='catnat_clean.csv' id='catnat_clean.csv_086F776F661E422C8BBB04A50FC37957'>
+            <properties context=''>
+              <relation connection='textscan.0tkn4vc1eov3j70zyqbn10ps5c7j' name='catnat_clean.csv' table='[catnat_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='fr_FR'>
+                  <column datatype='string' name='ID_Catastrophe' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Country' ordinal='2' />
+                  <column datatype='boolean' name='Deces' ordinal='3' />
+                  <column datatype='integer' name='Decennie' ordinal='4' />
+                  <column datatype='string' name='Type_Catastrophe' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='catnat_clean' name='federated.1y7r6610679wzl17lb2o60ljdmp6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1y7r6610679wzl17lb2o60ljdmp6'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.1y7r6610679wzl17lb2o60ljdmp6].[none:Country:nk]' />
+              <geometry column='[federated.1y7r6610679wzl17lb2o60ljdmp6].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1y7r6610679wzl17lb2o60ljdmp6].[Latitude (generated)]</rows>
+        <cols>[federated.1y7r6610679wzl17lb2o60ljdmp6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{6BACEF85-FA24-42C9-BC59-A0E0CAB33C39}' />
+    </worksheet>
+    <worksheet name='Region vs SUM(Deces)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='catnat_clean' name='federated.1y7r6610679wzl17lb2o60ljdmp6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y7r6610679wzl17lb2o60ljdmp6'>
+            <column datatype='boolean' name='[Deces]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Deces]' derivation='Count' name='[cnt:Deces:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1y7r6610679wzl17lb2o60ljdmp6].[cnt:Deces:qk]</rows>
+        <cols>[federated.1y7r6610679wzl17lb2o60ljdmp6].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{183C13EB-7419-47D1-94D2-95A7C88DFECA}' />
+    </worksheet>
+    <worksheet name='Type_Catastrophe vs COUNT(ID_Catastrophe)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='catnat_clean' name='federated.1y7r6610679wzl17lb2o60ljdmp6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y7r6610679wzl17lb2o60ljdmp6'>
+            <column caption='ID Catastrophe' datatype='string' name='[ID_Catastrophe]' role='dimension' type='nominal' />
+            <column caption='Type Catastrophe' datatype='string' name='[Type_Catastrophe]' role='dimension' type='nominal' />
+            <column-instance column='[ID_Catastrophe]' derivation='Count' name='[cnt:ID_Catastrophe:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type_Catastrophe]' derivation='None' name='[none:Type_Catastrophe:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1y7r6610679wzl17lb2o60ljdmp6].[cnt:ID_Catastrophe:qk]</rows>
+        <cols>[federated.1y7r6610679wzl17lb2o60ljdmp6].[none:Type_Catastrophe:nk]</cols>
+      </table>
+      <simple-id uuid='{41F21E29-C473-4398-BF4E-612916A5AC79}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Type_Catastrophe vs COUNT(ID_Catastrophe)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5C83BAEA-377D-41AC-8773-5821A7D2E289}' />
+    </window>
+    <window class='worksheet' name='Region vs SUM(Deces)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FED24E96-9E68-4D64-AC89-012C29C6CAF5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C66BCAA0-E760-4D2C-9D76-9FFBFD5503CB}' />
+    </window>
+  </windows>
+</workbook>

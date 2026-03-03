@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from ydata_profiling import ProfileReport
 
 df = pd.read_csv("../data/catnat_dirty.csv")
 
@@ -207,3 +208,6 @@ df_export.info()
 
 # 4. Exportez en CSV : catnat_clean.csv
 df_export.to_csv("../data/catnat_clean.csv", index=False)
+
+profile = ProfileReport(df, title="Rapport CatNat")
+profile.to_file("../results/rapport.html")
