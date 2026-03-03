@@ -1,11 +1,11 @@
-# Nettoyage de données - Catastrophes naturelles
+# TP-2 Visualisation de données massives
 
 Nettoyage et préparation du dataset `catnat_dirty.csv` pour une analyse de détection d'anomalies.
 
 ## Lancer le script
 
 ```bash
-python pipeline.py
+python main.py
 ```
 
 ## Ce que fait le script
@@ -58,3 +58,12 @@ Les régions sont bien distinctes.
 - Les pays sont-ils reconnus ?
 
 Les pays sont bien reconnus et les inconnus sont filtrés.
+
+## Pour les curieux
+
+- Script automatisé
+```bash
+python pipeline.py
+```
+
+- Utilisation de `pandas-profiling` avec génération d'un `rapport.html`
