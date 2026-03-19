@@ -1,3 +1,5 @@
+Lien vers Tableau Publique du projet : https://public.tableau.com/app/profile/arthur.rondeau/viz/tp2_17739215799910/Feuille1
+
 # TP-2 Visualisation de données massives
 
 Nettoyage et préparation du dataset `catnat_dirty.csv` pour une analyse de détection d'anomalies.
